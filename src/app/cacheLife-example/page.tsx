@@ -4,6 +4,7 @@ import { getData4 } from "@/server/getData4";
 import { getData5 } from "@/server/getData5";
 import { getData6 } from "@/server/getData6";
 import { revalidateCacheLifeTags } from "@/server/revalidateCacheLifeTags";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const CacheLifeExample = () => {
@@ -132,7 +133,7 @@ const CacheLifeExample = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg space-y-4">
-        <h1 className="text-2xl font-bold text-center">Cache demo</h1>
+        <h1 className="text-2xl font-bold text-center">cacheLife Demo</h1>
         <div className="text-4xl font-bold text-red-300 text-center">
           {seconds}{" "}
           <span className="text-sm font-normal text-gray-500">sec</span>
@@ -261,6 +262,11 @@ const CacheLifeExample = () => {
           </div>
         )}
       </div>
+      <Link href="/">
+        <button className="absolute top-2 left-2 bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded-lg transition duration-200">
+          Back to Home
+        </button>
+      </Link>
     </div>
   );
 };

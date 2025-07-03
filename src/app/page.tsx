@@ -8,23 +8,20 @@ export default function Home() {
         <p className=" text-gray-500 text-xs">
           This page demonstrates the use of caching in Next.js.
         </p>
-        <p className=" text-gray-500 text-xs">
-          The first button shows how to use the cache with a simple function.
-        </p>
         <div className="flex flex-col gap-8">
           <Link href="/use-cache-example">
-            <button className="bg-blue-600 hover:bg-blue-700  text-white py-3 rounded-lg font-semibold transition duration-200">
-              Use Cache Example
+            <button className="w-full bg-blue-600 hover:bg-blue-700  text-white py-3 rounded-lg font-semibold transition duration-200">
+              Use Cache Demo
             </button>
           </Link>
           <Link href="/cacheTag-example">
-            <button className="bg-amber-400 hover:bg-amber-500  text-white py-3 rounded-lg font-semibold transition duration-200">
-              CacheTah Example
+            <button className="w-full bg-amber-400 hover:bg-amber-500  text-white py-3 rounded-lg font-semibold transition duration-200">
+              cacheTag Demo
             </button>
           </Link>
-          <Link href="/cacheTag-example">
-            <button className="bg-green-600 hover:bg-green-700  text-white py-3 rounded-lg font-semibold transition duration-200">
-              CacheLife Example
+          <Link href="/cacheLife-example">
+            <button className="w-full bg-green-600 hover:bg-green-700  text-white py-3 rounded-lg font-semibold transition duration-200">
+              cacheLife Demo
             </button>
           </Link>
         </div>

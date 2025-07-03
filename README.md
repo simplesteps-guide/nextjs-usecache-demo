@@ -1,4 +1,5 @@
 This is a [SimpleSteps.guide](https://simplesteps.guide) small project to demonstrate use cache feature in NextJS.
+The full guide can be found [here](https://simplesteps.guide/guides/technology/web-development/next-js-use-cache/use-cache).
 
 ## Getting Started
 

@@ -2,6 +2,7 @@
 
 import { getData1 } from "@/server/getData1";
 import { getData2 } from "@/server/getData2";
+import Link from "next/link";
 import { useState } from "react";
 
 const UseCacheExample = () => {
@@ -58,7 +59,7 @@ const UseCacheExample = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg space-y-6">
-        <h1 className="text-2xl font-bold text-center">Cache demo</h1>
+        <h1 className="text-2xl font-bold text-center">Use Cache Demo</h1>
         <p className=" text-gray-500 text-xs">
           This page demonstrates the use of caching in Next.js. You can
           calculate the sum of two numbers with and without cache. The calculate
@@ -136,6 +137,11 @@ const UseCacheExample = () => {
           </div>
         )}
       </div>
+      <Link href="/">
+        <button className="absolute top-2 left-2 bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded-lg transition duration-200">
+          Back to Home
+        </button>
+      </Link>
     </div>
   );
 };
